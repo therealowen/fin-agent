@@ -1,0 +1,9 @@
+# 密钥绝不入库
+.env
+*.key
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.python-version
