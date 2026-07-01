@@ -8,11 +8,8 @@ Agent 自主决定调用哪些工具、多步执行、并给出带来源的答�
 > 目标不是"功能多"，而是把 **provider 抽象、agent loop、tool-calling、多步/并行工具编排、失败兜底、评测** 这几件事做清楚。
  
 ## Demo
- 
-<!-- TODO: 把你终端运行的截图或 GIF 放这里，例如： -->
-<!-- ![demo](docs/demo.png) -->
-_（运行截图见下方 `python agent.py` 输出）_
- 
+![alt text](image.png)
+
 ## 架构
  
 ```
@@ -85,7 +82,7 @@ Agent 自主把问题拆成独立子任务与依赖子任务：互不依赖的�
 python -m venv venv && source venv/bin/activate     # Windows: venv\Scripts\activate
 pip install -r requirements.txt
  
-cp .env.example .env                                 # 填入你的 key（.env 不会被提交）
+cp .env.example .env                                 # 填入key
 export $(cat .env | grep -v '^#' | xargs)            # 载入环境变量（Mac/Linux）
  
 python agent.py     # 跑示例问题
